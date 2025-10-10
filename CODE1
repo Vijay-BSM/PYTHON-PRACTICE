@@ -1,0 +1,23 @@
+name1=input("Enter your name: ")
+name2=input("enter your partner name:")
+
+combine=name1+name2
+change_case=combine.upper()
+t=change_case.count("t")
+r=change_case.count("r")
+u=change_case.count("u")
+e=change_case.count("e")
+true=t+r+u+e
+l=change_case.count("l")
+o=change_case.count("o")
+v=change_case.count("v")
+e=change_case.count("e")
+love=l+o+v+e
+print(change_case)
+score=int(str(true)+str(love))
+if score<10 or score>90:
+    print("Your score is true love",score)
+elif score>=40 and score<50:
+    print("Your score is low love",score)
+else:
+    print("Your score is no love",score)
