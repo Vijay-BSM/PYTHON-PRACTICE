@@ -1,0 +1,37 @@
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        self.reviews = []
+        self.count = 0
+
+    def add_review(self, review):
+        self.reviews.append(review)
+        self.count += 1
+
+    def show_count(self):
+        return self.count
+
+
+# Create objec
+book1 = Book("java", "pavitra")
+print(book1.title)
+print(book1.author)
+
+# Add reviews
+book1.add_review("Very good book")
+book1.add_review("Easy to understand")
+book1.add_review("Excellent book")
+book1.add_review("goo")
+
+# Display count
+print("Number of reviews:", book1.show_count())
+
+# Display reviews
+print("Reviews:", book1.reviews)
+
+
+
+
+
+        
