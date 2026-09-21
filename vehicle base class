@@ -1,0 +1,20 @@
+class Vehicle:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+class car(Vehicle):
+    def __init__(self, brand, model, seat):
+        super().__init__(brand,model)
+        self.seat = seat
+
+class bike(Vehicle):
+    def __init__(self, brand, model, engine):
+        super().__init__(brand,model)
+        self.engine = engine
+
+obj=car("BMW","m5","7")
+print(obj.brand,obj.model,obj.seat)
+obj2=bike("KTM","220","rc")
+print(obj2.model,obj2.model,obj2.engine)
+    
+       
